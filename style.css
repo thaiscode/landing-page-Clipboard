@@ -123,11 +123,11 @@ main {
 }
 
 .computer__text {
-    max-width: 20%;
+    max-width: 50%;
     text-align: left;
 }
 
-.computer__text > h3 {
+.computer__text h3 {
     text-align: left;
 }
 
@@ -137,7 +137,7 @@ main {
 }
 
 .access > p {
- padding-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .supercharge-tools, .logos {
@@ -201,6 +201,20 @@ main {
     }
 
     .button-ios, .button-mac {
-        width: clamp(300px, 90%, 400px);
+        width: clamp(240px, 90%, 400px);
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .computer__text {
+        margin-top: 2rem;
+    }
+
+    .computer__text h3, .computer__text div p {
+        text-align: center;
+    }
+
+    .computer__text > div p{
+        width: clamp(240px, 45vw, 500px);
     }
 }
